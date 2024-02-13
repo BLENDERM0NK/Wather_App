@@ -1,0 +1,212 @@
+/* body{
+    background-color: cadetblue;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: 750px;
+    margin-top: 50px;
+}
+
+.searchBtn{
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.searchInput{
+    border-radius: 5px;
+    width: 250px;
+    
+}
+
+.weather-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: aqua;
+    width: 500px;
+    height: 400px;
+    margin-left: 700px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.lists{
+    margin-right: 250px;
+    
+}
+
+ul li{
+    margin-bottom: 30px;
+} */
+
+body{
+    background-image: url(/pexels-kaique-rocha-125510.jpg);
+}
+
+.top-container{
+    margin-left: 750px;
+    margin-top: 50px;
+}
+
+.searchInput{
+    border-radius: 15px;
+    height: 30px;
+
+}
+
+.searchBtn{
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    
+}
+
+.cityName{
+    background-color: rgba(182, 198, 165, 0.897);
+    backdrop-filter: blur(5px);
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-left: 650px;
+    align-items: center;
+}
+.Name{
+    text-align: center;
+}
+
+.weather-data{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+    margin-left: 145px;
+    
+    
+    
+
+}
+.currentTemp{
+    /* background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    width: auto; */
+
+    text-align: center;
+    margin-left: 800px;
+    font-size: 60px;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+         -225deg,
+         #231557 0%,
+         #44107a 29%,
+         #ff1361 67%,
+         #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        /* font-size: 190px; */
+     
+    @keyframes textclip {
+       to {
+         background-position: 200% center;
+       }
+     }
+    
+    
+    
+}
+
+.visibility{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.lowestTemp{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.highestTemp{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.windSpeed{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.feelsLike{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.humidity{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.pressure{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+h4{
+    margin-left: 20px;
+    
+    
+}
+
+h3{
+    margin-top: 45PX;
+    margin-left: 60px;
+    
+}
+
+.searchBtm{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 850px;
+   
+    background-color: rgba(0, 0, 0, 0.61);
+    
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+

@@ -1,0 +1,105 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Weather App</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="cityName">
+            <h1 class="Name" style="color: azure;">
+              <% if (locals.City) {%>
+                <%= City %>, <%= country %>, <%= date %>-<%= month %>-<%= year %>
+              <% } %> 
+            </h1>
+        </div>
+        <div class="currentTemps">
+            <!-- <h4 style="color: azure;">Current Temp:</h4>  -->
+            <h3 class="currentTemp" style="color: azure;"><% if (locals.content){ %>
+              <%= content %>°C
+              <% } %>
+            </h3>
+            
+          </div>
+
+        <div class="weather-data">
+        
+            <div class="lowestTemp">
+        
+              <h4 style="color: azure;">Lowest Temp:</h4>
+              <h3 style="color: azure;">
+                <% if (locals.temp_m){ %>
+                <%= temp_m %>
+                <% } %>
+              </h3>  
+              
+            </div>
+            
+            <div class="highestTemp">
+              <h4 style="color: azure;"> Highest Temp:</h4>
+              <h3 style="color: azure;">
+                <% if (locals.temp_ma) {%>
+                <%= temp_ma %>
+                <% } %> 
+              </h3>
+            </div>
+        
+            <div class="windSpeed">
+              <h4 style="color: azure;"> Wind Speed:<h4>
+              <h3 style="color: azure;">
+                <% if (locals.wind) {%>
+                <%= wind %>
+                <% } %>
+              </h3>   
+            </div>
+        
+            <div class="feelsLike">
+              <h4 style="color: azure;"> Feels Like:</h4>
+              <h3 style="color: azure;">
+                <% if (locals.feels_l) {%>
+                <%= feels_l %>
+                <% } %> 
+              </h3>
+            </div>
+        
+            <div class="pressure">
+              <h4 style="color: azure;"> Pressure:</h4>
+              <h3 style="color: azure;">
+                <% if (locals.Pressure) {%>
+                <%= Pressure %>
+                <% } %> 
+              </h3>
+            </div>
+        
+            <div class="humidity">
+              <h4 style="color: azure;"> Humidity:</h4>
+              <h3 style="color: azure;">
+                <% if (locals.Humidity) {%>
+                <%= Humidity %>
+                <% } %> 
+              </h3>
+            </div>
+
+            <div class="visibility">
+        
+                <h4 style="color: azure;">Visibility:</h4>
+                <h3 style="color: azure;">
+                  <% if (locals.visibility){ %>
+                  <%= visibility %>
+                  <% } %>
+                </h3>  
+                
+              </div>
+        
+          </div>
+
+          <div class="btm-container">
+            <form class="d-flex" role="search" action="/reset" method="POST">
+                <button type="submit" class="searchBtm" style="font-size : 30px; color: azure;">Reset</button>
+            </form>
+          </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

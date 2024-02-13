@@ -1,0 +1,58 @@
+<div class="conatiner">
+      <!-- <img src="../public/sunny.gif" alt="sunny" class="image"> -->
+
+
+      <div class="top-container">
+        <form class="d-flex" role="search" action="/submit" method="POST">
+          <div class="searchBar">
+            <input class="searchInput" type="search" placeholder="Enter your city" aria-label="Search" name="cityName">
+            <button type="submit" class="searchBtn">Search</button>
+          </div>
+        </form>
+      </div>
+  
+  
+      <div class="weather-data">
+        <h1 class="cityName">
+          <% if (locals.City) {%>
+            <%= City %>'s Weather Data
+          <% } %> 
+        </h1>
+  
+        <ul style="list-style: none;" class="lists">
+          <li>
+            <h4>Current Temp: <% if (locals.content){ %>
+              <%= content %>
+              <% } %>
+            </h4>
+          </li>
+  
+          <li>
+            <h4>Lowest Temp: <% if (locals.temp_m){ %>
+              <%= temp_m %>
+              <% } %>
+            </h4>
+            </li>
+  
+          <li>
+            <h4> Highest Temp: <% if (locals.temp_ma) {%>
+              <%= temp_ma %>
+              <% } %> 
+            </h4>
+          </li>
+  
+          <li>
+            <h4> Wind Speed: <% if (locals.wind) {%>
+              <%= wind %>
+              <% } %>
+            </h4>
+          </li>
+  
+        </ul>
+      </div>
+
+
+
+
+
+    </div>
